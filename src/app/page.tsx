@@ -49,6 +49,8 @@ export default function Home() {
             <Image
               src="/icons/google_playstore.png"
               alt="Google Play"
+              width={24}
+              height={24}
               className={styles.btnPrimaryIcon}
             />
             Descargar en Google Play
@@ -63,6 +65,8 @@ export default function Home() {
             <Image
               src="/icons/ios_appstore.png"
               alt="App Store"
+              width={24}
+              height={24}
               className={styles.btnPrimaryIcon}
             />
             Proximamente en App Store
@@ -163,6 +167,8 @@ export default function Home() {
               <Image
                 src="/icons/google_playstore.png"
                 alt="Google Play"
+                width={24}
+                height={24}
                 className={styles.btnPrimaryIcon}
               />
               Descargar ahora
@@ -175,6 +181,8 @@ export default function Home() {
               <Image
                 src="/icons/ios_appstore.png"
                 alt="App Store"
+                width={24}
+                height={24}
                 className={styles.btnPrimaryIcon}
               />
               Proximamente
