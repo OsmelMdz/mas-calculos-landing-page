@@ -1,0 +1,59 @@
+@use "sass:color";
+
+$primary-color: #0c4e9e;
+$secondary-color: #f3e600;
+$tertiary-color: #1d8436;
+$quaternary-color: #e62c22;
+$quinary-color: #f7a949;
+$senary-color: #6d388d;
+
+$background-color: #f9f9f9;
+$text-color: #333333;
+$grey-color-555555: #555555;
+$grey-color-666666: #666666;
+$white-color: #ffffff;
+$black-color: #000000;
+
+$primary-color-dark: #1a73e8;
+$secondary-color-dark: #f9e34f;
+$tertiary-color-dark: #2fae54;
+$quaternary-color-dark: #ff4d4d;
+$quinary-color-dark: #ffb366;
+$senary-color-dark: #8c4db3;
+
+$background-color-dark: #121212;
+$text-color-dark: #f0f0f0;
+
+@mixin light-theme {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --quaternary-color: #{$quaternary-color};
+  --quinary-color: #{$quinary-color};
+  --senary-color: #{$senary-color};
+
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+  --white-color: #{$white-color};
+  --black-color: #{$black-color};
+
+  --primary-color-darken: #{color.adjust($primary-color, $lightness: -10%)};
+  --secondary-color-lighten: #{color.adjust($secondary-color, $lightness: 10%)};
+}
+
+@mixin dark-theme {
+  --primary-color: #{$primary-color-dark};
+  --secondary-color: #{$secondary-color-dark};
+  --tertiary-color: #{$tertiary-color-dark};
+  --quaternary-color: #{$quaternary-color-dark};
+  --quinary-color: #{$quinary-color-dark};
+  --senary-color: #{$senary-color-dark};
+
+  --background-color: #{$background-color-dark};
+  --text-color: #{$text-color-dark};
+  --white-color: #{$white-color};
+  --black-color: #{$black-color};
+
+  --primary-color-darken: #{color.adjust($primary-color-dark, $lightness: -10%)};
+  --secondary-color-lighten: #{color.adjust($secondary-color-dark, $lightness: 10%)};
+}
