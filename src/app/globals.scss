@@ -8,6 +8,20 @@
   @include dark-theme;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+
 body {
   font-family: 'Arial', Helvetica, sans-serif;
   margin: 0;
